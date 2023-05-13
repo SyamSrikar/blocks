@@ -1,0 +1,100 @@
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.main_container{
+    display:flex;
+    width:50%;
+    margin:auto;
+    height:90vh;
+    margin-top:5vh;
+    position:relative;
+    align-items:center;
+    display:flex;
+    justify-content:center
+}
+.button{
+    position: absolute;
+    background-color: aqua;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+}
+
+.left_button{
+    left: 0;
+    width: 5%;
+    height: 90%;
+    top: 5%;
+}
+.right_button{
+    right: 0;
+    width: 5%;
+    height: 90%;
+    top: 5%;
+}
+.top_button{
+    top: 0;
+    width: 90%;
+    height: 5%;
+    left: 5%;
+}
+.bottom_button{
+    bottom: 0;
+    width: 90%;
+    height: 5%;
+    left: 5%;
+}
+
+.container{
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+
+@media screen and (max-width: 1400px) {
+    .main_container{
+        width: 60%;
+        height: 70vh;
+    }
+    .right_button p{
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+    .left_button p{
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+}
+@media screen and (max-width: 900px) {
+    .main_container{
+        width: 90%;
+        height: 70vh;
+    }
+    .left_button p{
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+    .right_button p{
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+}
+@media screen and (max-width: 500px) {
+    .main_container{
+        width: 90%;
+        height: 50vh;
+    }
+    .left_button p{
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+    .right_button p{
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+}
+
